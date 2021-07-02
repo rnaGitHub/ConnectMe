@@ -1,12 +1,26 @@
-# Using DEASSA to ingest data for ConnectMe into RAW zone
+# ConnectMe
 
-## What's required:
+## Table of Contents
+
+### Requirements for ConnectMe & extending DEASSA framework
 
 
 
-## Notebook Changes:
+### SPII - how this is being handled
+1. how it is determined if it is SPII data vs non-regulated data
 
-1. events_from_eh_to_raw
+2. how we are handling it
+
+
+### Using DEASSA to ingest data for ConnectMe into RAW zone
+
+
+#### What's required:
+
+
+#### Notebook Changes:
+
+##### 1. events_from_eh_to_raw
 	- Added data validations to notebook. If a widget is left empty, replace it with "none". This is to avoid errors during job executions.
      
 	  for e.g. val ADLS_CONTAINER: String = Option(dbutils.widgets.get("ADLS_Container")).filter(_.nonEmpty).getOrElse("none")
@@ -29,8 +43,13 @@
 
         
 
-	EventHubIngestor
-	raw_to_struct_cntme
-	RawToStructProcessor
-	/development/common/general/MetadataTool
-	SchemaUtil
+##### 2. EventHubIngestor
+
+##### 3. raw_to_struct_cntme
+
+##### 4. RawToStructProcessor
+
+##### 5. /development/common/general/MetadataTool
+
+##### 6. SchemaUtil
+
