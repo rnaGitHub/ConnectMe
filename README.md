@@ -1,7 +1,7 @@
 # ConnectMe
 
 Flow diagram:
-![Flow Diagram](FlowDiagram.png)
+![FlowDiagram](https://user-images.githubusercontent.com/50551211/124631223-2b978680-de51-11eb-8712-b472637c1064.png)
 
 ## Table of Contents
 
